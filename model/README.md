@@ -1,4 +1,4 @@
-# Wake Word Detection
+# DIY Alexa Wake Word Detection
 
 This folder contains the Jupyter notebooks for creating the training data, training the model, and exporting the model to TensorFlow Lite.
 
@@ -33,7 +33,7 @@ Download and expand the data using:
 tar -xzf data_speech_commands_v0.02.tar.gz -C speech_data
 ```
 
-For my training, I added a lot more data to the `_background_noise_` folder. I also created a `_problem_noise_` folder and recorded sounds that seemed to confuse the model - low frequency humming noises around 100Hz seem to cause problems.
+For my training, I add a lot more data to the `_background_noise_` folder. I also created a `_problem_noise_` folder and recorded sounds that seemed to confuse the model - low frequency humming noises around 100Hz seem to cause problems.
 
 I also tried to eliminate confusion between other words that start with `Mar` and created a folder called `_mar_sounds_`. To generate the `mar` sounds I created a script called `generate_m_words.sh` which uses the built-in `say` command on the Mac computer to generate speech.
 

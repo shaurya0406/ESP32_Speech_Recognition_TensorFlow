@@ -58,7 +58,7 @@ def callback(input_data, frame_count, time_info, flags):
         spectrogram = np.log10(spectrogram + 1e-6)
         prediction = model.predict(np.reshape(spectrogram, (1, 99, 43, 1)))
         if prediction[0][0] > 0.9:
-            print(f"{datetime.now().time()} - Yes, I am listening.... {prediction[0][0]}")
+            print(f"{datetime.now().time()} - Yes, listening {prediction[0][0]}")
         end = time.perf_counter()
         # print((end-start)*1000)
 
