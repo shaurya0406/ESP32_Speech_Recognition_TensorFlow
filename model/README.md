@@ -1,4 +1,4 @@
-# DIY Alexa Wake Word Detection
+# Wake Word Detection
 
 This folder contains the Jupyter notebooks for creating the training data, training the model, and exporting the model to TensorFlow Lite.
 
