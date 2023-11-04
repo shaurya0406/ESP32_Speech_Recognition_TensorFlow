@@ -16,5 +16,6 @@ protected:
 public:
     ADCSampler(adc_unit_t adc_unit, adc1_channel_t adc_channel);
 };
-
+ 
+ 
 #endif
