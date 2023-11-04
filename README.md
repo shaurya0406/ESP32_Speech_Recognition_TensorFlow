@@ -1,19 +1,6 @@
 # Speech Synthesis and Recognition With the ESP32 ,Wit.AI and Wake Word Detection using Tensor Flow and TensorFlow Lite.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z734F5Y)
-# DIY Alexa With the ESP32 and Wit.AI
-
-All the source code for this tutorial is in [GitHub](https://github.com/atomic14/diy-alexa)
-
 ## Introduction
-
-This tutorial will guide you through the process of creating your own DIY Alexa using the ESP32 and Wit.ai.
-
-There's a full video tutorial to accompany this available here:
-
-[![Demo Video](https://img.youtube.com/vi/re-dSV_a0tM/0.jpg)](https://www.youtube.com/watch?v=re-dSV_a0tM)
-
-First off, let's define what an Alexa is? What are we going to build?
 
 The first thing we're going to need is some kind of "wake word detection system". This will continuously listen to audio, waiting for a trigger phrase or word.
 
@@ -22,8 +9,6 @@ When it hears this word it will wake up the rest of the system and start recordi
 Once the audio has been captured it will send it off to a server to be recognised.
 
 The server processes the audio and works out what the user is asking for.
-
-![An Alexa System](https://blog.cmgresearch.com/assets/marvin/alexa.png)
 
 In some systems the server may process the user request, calling out to other services to execute the user's wishes. In the system we are going to build we'll just be using the server to work out what the user's intention was and then our ESP32 will execute the command.
 
